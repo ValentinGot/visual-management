@@ -16,8 +16,7 @@
             </div>
           </div>
         </div>
-        <textarea ref="editor" v-show="editor">
-        </textarea>
+        <editor ref="editor" v-show="editor"></editor>
       </div>
       <div class="modal-footer">
       </div>
@@ -58,7 +57,7 @@
       showEditor (config) {
         this.editor = true
         this.showPlugin = false
-        this.$refs.editor.innerHTML = JSON.stringify(config)
+        // this.$refs.editor.innerHTML = JSON.stringify(config)
       }
     }
   }
@@ -125,6 +124,10 @@
       .content-component {
         margin-left: 30px;
         cursor: pointer;
+      }
+
+      .editor {
+
       }
     }
 
